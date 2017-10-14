@@ -24,6 +24,7 @@
 [image1]: ./misc/rover_image.jpg
 [image2]: ./calibration_images/example_grid1.jpg
 [image3]: ./calibration_images/example_rock1.jpg 
+[result_img]: ./Result.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/916/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -55,7 +56,7 @@ In the decision_step, I was struggling with the rover to make it drive autonomou
 Aside from the biased driving strategy, I added the stuck_mode to handle the rover when it comes to the stucked situation.
 If the velocity of the rover is lower than 0.05, I increased the stuck_count one. And if the stuck_count reaches 20, then the state of the rover would be changed to the stuck_mode. In the stuck_mode, the rover a little go back out and roll the steer.
 
-[Result image]
+![result_img](./Result.png)
 
 
 
