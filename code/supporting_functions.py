@@ -123,6 +123,8 @@ def create_output_images(Rover):
       # found to be navigable terrain
       if tot_nav_pix > 0:
             fidelity = round(100*good_nav_pix/(tot_nav_pix), 1)
+            print('good_nav_pix = ', good_nav_pix)
+            print('tot_nav_pix = ', tot_nav_pix)
       else:
             fidelity = 0
       # Flip the map for plotting so that the y-axis points upward in the display
